@@ -1,0 +1,16 @@
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\ConsultCep.API.exe
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\ConsultCep.API.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\ConsultCep.API.deps.json
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\ConsultCep.API.runtimeconfig.json
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\ConsultCep.API.pdb
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\FluentValidation.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\FluentValidation.AspNetCore.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\Microsoft.OpenApi.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\ConsultCep.Domain.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\publish\ConsultCep.Domain.pdb

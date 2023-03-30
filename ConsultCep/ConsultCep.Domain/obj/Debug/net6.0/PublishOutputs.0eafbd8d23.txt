@@ -1,0 +1,6 @@
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\bin\Debug\net6.0\publish\ConsultCep.Domain.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\bin\Debug\net6.0\publish\ConsultCep.Domain.deps.json
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\bin\Debug\net6.0\publish\ConsultCep.Domain.pdb
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\bin\Debug\net6.0\publish\FluentValidation.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\bin\Debug\net6.0\publish\FluentValidation.AspNetCore.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\bin\Debug\net6.0\publish\FluentValidation.DependencyInjectionExtensions.dll
