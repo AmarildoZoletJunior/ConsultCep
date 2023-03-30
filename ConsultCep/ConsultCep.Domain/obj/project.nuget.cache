@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "d0hXOZ3FvFzCKjwqI2NasL/tvEZwHHSVBDFzJGlWacmdLBJwPYH4CqpfpbUwZjI5DV3ubnhXUTxzgS/k1H8Y9Q==",
+  "dgSpecHash": "InTeQkLsvaHpOivoGpAU2htnOMNqXLwMHKStYbVuC/v68IZiFYCMLMNSHcBlKmj9KmEBYOCWBi7oDeXSDWNMVA==",
   "success": true,
   "projectFilePath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\CepProject\\ConsultCep\\ConsultCep.Domain\\ConsultCep.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
