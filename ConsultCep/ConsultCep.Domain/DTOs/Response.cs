@@ -15,6 +15,18 @@ namespace ConsultCep.Domain.DTOs
         public void AdicionarMensagem(string titulo,string mensagem)
         {
             Mensagens.Add(new MensagemErro(titulo,mensagem));
+            this.ValidarResponse();
+        }
+        public void ValidarResponse()
+        {
+            if(this.Mensagens.Count > 0)
+            {
+                this.EstaValido = false;
+            }
+        }
+        public void AdicionarDados(CepResponseDTO cepResponse)
+        {
+            this.Dados = cepResponse;
         }
     }
 }

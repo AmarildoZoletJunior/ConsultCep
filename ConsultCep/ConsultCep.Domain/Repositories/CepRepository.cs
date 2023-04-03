@@ -17,32 +17,28 @@ namespace ConsultCep.Domain.Repositories
             if (!validResponse.IsValid)
             {
                validResponse.Errors.ForEach(X => responseClass.AdicionarMensagem("CepValidador", X.ErrorMessage));
+               return responseClass;
             }
-
             HttpClient client = new HttpClient();
-
             string url = $"https://viacep.com.br/ws/{cep.CEP}/json/";
-
             HttpResponseMessage response = await client.GetAsync(url);
-            if(response.IsSuccessStatusCode)
-            {
-                CepEntity CepObject = await response.Content.ReadFromJsonAsync<CepEntity>();
 
-                if (CepObject.cep == null)
-                {
-                    responseClass.AdicionarMensagem("Cep não encontrado", "Este CEP não foi encontrado");
-                }
-                var mapeado = new CepResponseDTO { Bairro = CepObject.bairro, CodigoPostal = CepObject.cep, Complemento = CepObject.complemento, Gia = CepObject.gia, Localidade = CepObject.localidade, NumeroDDD = int.Parse(CepObject.ddd), Populacao = int.Parse(CepObject.ibge), Siafi = int.Parse(CepObject.siafi), UnidadeFederativa = CepObject.uf, Endereco = CepObject.logradouro };
-                responseClass.Dados = mapeado;
-            }
-            else
+            if(!response.IsSuccessStatusCode)
             {
                 responseClass.AdicionarMensagem("Ocorreu um erro", "Erro não mapeado");
+                return responseClass;
             }
-            if(responseClass.Mensagens.Count > 0)
+
+            CepEntity CepObject = await response.Content.ReadFromJsonAsync<CepEntity>();
+            if (CepObject.cep == null)
             {
-                responseClass.EstaValido = false;
+                responseClass.AdicionarMensagem("Cep não encontrado", "Este CEP não foi encontrado");
+                return responseClass;
             }
+
+            var mapeado = new CepResponseDTO { Bairro = CepObject.bairro, CodigoPostal = CepObject.cep, Complemento = CepObject.complemento, Gia = CepObject.gia, Localidade = CepObject.localidade, NumeroDDD = int.Parse(CepObject.ddd), Populacao = int.Parse(CepObject.ibge), Siafi = int.Parse(CepObject.siafi), UnidadeFederativa = CepObject.uf, Endereco = CepObject.logradouro };
+            responseClass.AdicionarDados(mapeado);
+
             return responseClass;
         }
     }
