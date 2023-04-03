@@ -15,8 +15,8 @@ namespace ConsultCep.API.Controllers
             _cepRepository = cep;      
         }
 
-        [HttpPost]
-        public async Task<IActionResult> GetAsync([Required]CepDTORequest cep) 
+        [HttpGet("{cep}")]
+        public async Task<IActionResult> GetAsync(string cep) 
         {
             var resultado = await _cepRepository.BuscarInfoCep(cep);
 

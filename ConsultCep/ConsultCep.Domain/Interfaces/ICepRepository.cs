@@ -10,6 +10,6 @@ namespace ConsultCep.Domain.Interfaces
 {
     public interface ICepRepository
     {
-        Task<Response> BuscarInfoCep(CepDTORequest cep);
+        Task<Response> BuscarInfoCep(string cep);
     }
 }

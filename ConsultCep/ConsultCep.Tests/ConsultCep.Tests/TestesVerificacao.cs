@@ -1,7 +1,5 @@
-using ConsultCep.Domain.DTO;
 using ConsultCep.Domain.DTOs;
 using ConsultCep.Domain.Repositories;
-using System.Security.Cryptography.X509Certificates;
 
 namespace ConsultCep.Tests
 {

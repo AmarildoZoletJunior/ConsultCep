@@ -3,34 +3,42 @@ using ConsultCep.Domain.DTOs;
 using ConsultCep.Domain.Entities;
 using ConsultCep.Domain.Interfaces;
 using ConsultCep.Domain.Validador;
+using Microsoft.Extensions.Configuration;
 using System.Net.Http.Json;
 
 namespace ConsultCep.Domain.Repositories
 {
     public class CepRepository : ICepRepository
     {
-        public async Task<Response> BuscarInfoCep(CepDTORequest cep)
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public CepRepository(IHttpClientFactory httpClientFactory)
         {
+            _httpClientFactory = httpClientFactory;
+        }
+
+        public async Task<Response> BuscarInfoCep(string cep)
+        {
+            var requestValidacao = new CepDTORequest { CEP = cep };
             Response responseClass = new Response();
             CepValidador Validator = new CepValidador();
-            var validResponse = Validator.Validate(cep);
+            var validResponse = Validator.Validate(requestValidacao);
             if (!validResponse.IsValid)
             {
                validResponse.Errors.ForEach(X => responseClass.AdicionarMensagem("CepValidador", X.ErrorMessage));
                return responseClass;
             }
-            HttpClient client = new HttpClient();
-            string url = $"https://viacep.com.br/ws/{cep.CEP}/json/";
-            HttpResponseMessage response = await client.GetAsync(url);
-
-            if(!response.IsSuccessStatusCode)
+            var http = _httpClientFactory.CreateClient("ViaCepApi");
+            Console.WriteLine(http.BaseAddress);
+            var response = await http.GetAsync($"{cep}/json/");
+            if (!response.IsSuccessStatusCode)
             {
                 responseClass.AdicionarMensagem("Ocorreu um erro", "Erro não mapeado");
                 return responseClass;
             }
 
             CepEntity CepObject = await response.Content.ReadFromJsonAsync<CepEntity>();
-            if (CepObject.cep == null)
+            if (CepObject?.cep == null)
             {
                 responseClass.AdicionarMensagem("Cep não encontrado", "Este CEP não foi encontrado");
                 return responseClass;

@@ -1,8 +1,4 @@
-using ConsultCep.Domain.DTOs;
-using ConsultCep.Domain.Interfaces;
-using ConsultCep.Domain.Repositories;
-using ConsultCep.Domain.Validador;
-using FluentValidation;
+using ConsultCep.API.Ioc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,9 +9,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddTransient<IValidator<CepDTORequest>, CepValidador>();
+builder.Services.AddConsultCepExtensions(builder.Configuration);
 
-builder.Services.AddScoped<ICepRepository, CepRepository>();
 
 var app = builder.Build();
 
