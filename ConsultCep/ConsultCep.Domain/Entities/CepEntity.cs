@@ -1,5 +1,6 @@
 ﻿namespace ConsultCep.Domain.Entities
 {
+    [Serializable]
     public class CepEntity
     {
         public string cep { get; set; }

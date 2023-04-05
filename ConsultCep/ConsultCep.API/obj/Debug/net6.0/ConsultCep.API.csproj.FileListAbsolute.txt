@@ -35,3 +35,8 @@ C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\Consul
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\obj\Debug\net6.0\ConsultCep.API.pdb
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\obj\Debug\net6.0\ConsultCep.API.genruntimeconfig.cache
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\obj\Debug\net6.0\ref\ConsultCep.API.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\System.Threading.Channels.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\ConsultCep.Utils.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\ConsultCep.Utils.pdb
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.API\bin\Debug\net6.0\Newtonsoft.Json.dll

@@ -1,5 +1,6 @@
 ﻿namespace ConsultCep.Domain.DTO
 {
+    [Serializable]
     public class CepResponseDTO
     {
         public string Complemento { get; set; }

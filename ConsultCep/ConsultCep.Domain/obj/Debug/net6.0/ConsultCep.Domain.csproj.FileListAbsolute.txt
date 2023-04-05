@@ -10,3 +10,6 @@ C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\Consul
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\obj\Debug\net6.0\refint\ConsultCep.Domain.dll
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\obj\Debug\net6.0\ConsultCep.Domain.pdb
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\obj\Debug\net6.0\ref\ConsultCep.Domain.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\bin\Debug\net6.0\ConsultCep.Utils.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\bin\Debug\net6.0\ConsultCep.Utils.pdb
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Domain\obj\Debug\net6.0\ConsultCep.Domain.csproj.CopyComplete
