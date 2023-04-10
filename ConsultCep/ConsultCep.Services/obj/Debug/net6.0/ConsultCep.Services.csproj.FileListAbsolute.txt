@@ -1,0 +1,12 @@
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\obj\Debug\net6.0\ConsultCep.Services.csproj.AssemblyReference.cache
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\obj\Debug\net6.0\ConsultCep.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\obj\Debug\net6.0\ConsultCep.Services.AssemblyInfoInputs.cache
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\obj\Debug\net6.0\ConsultCep.Services.AssemblyInfo.cs
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\obj\Debug\net6.0\ConsultCep.Services.csproj.CoreCompileInputs.cache
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\bin\Debug\net6.0\ConsultCep.Services.deps.json
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\bin\Debug\net6.0\ConsultCep.Services.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\bin\Debug\net6.0\ConsultCep.Services.pdb
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\obj\Debug\net6.0\ConsultCep.Services.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\obj\Debug\net6.0\refint\ConsultCep.Services.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\obj\Debug\net6.0\ConsultCep.Services.pdb
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\CepProject\ConsultCep\ConsultCep.Services\obj\Debug\net6.0\ref\ConsultCep.Services.dll

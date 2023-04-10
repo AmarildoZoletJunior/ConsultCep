@@ -30,6 +30,9 @@
             "projectReferences": {
               "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\CepProject\\ConsultCep\\ConsultCep.Domain\\ConsultCep.Domain.csproj": {
                 "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\CepProject\\ConsultCep\\ConsultCep.Domain\\ConsultCep.Domain.csproj"
+              },
+              "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\CepProject\\ConsultCep\\ConsultCep.Services\\ConsultCep.Services.csproj": {
+                "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\CepProject\\ConsultCep\\ConsultCep.Services\\ConsultCep.Services.csproj"
               }
             }
           }
@@ -44,6 +47,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.17.2, )"
@@ -139,6 +146,67 @@
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\CepProject\\ConsultCep\\ConsultCep.Services\\ConsultCep.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\CepProject\\ConsultCep\\ConsultCep.Services\\ConsultCep.Services.csproj",
+        "projectName": "ConsultCep.Services",
+        "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\CepProject\\ConsultCep\\ConsultCep.Services\\ConsultCep.Services.csproj",
+        "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\CepProject\\ConsultCep\\ConsultCep.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -288,6 +356,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

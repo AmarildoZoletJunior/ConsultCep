@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -11,12 +12,9 @@ namespace ConsultCep.Utils.ClassUtils
     {
         public static byte[] ObjectToByteArray(Object obj)
         {
-            BinaryFormatter bf = new BinaryFormatter();
-            using (var ms = new MemoryStream())
-            {
-                bf.Serialize(ms, obj);
-                return ms.ToArray();
-            }
+            var body = JsonConvert.SerializeObject(obj);
+            var byteTrade = Encoding.UTF8.GetBytes(body);
+            return byteTrade;
         }
     }
 }

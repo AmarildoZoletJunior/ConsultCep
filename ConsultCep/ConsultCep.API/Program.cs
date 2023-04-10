@@ -11,6 +11,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddConsultCepExtensions(builder.Configuration);
 
+builder.Services.AddStackExchangeRedisCache(x =>
+{
+    x.Configuration = "localhost:6379";
+});
 
 var app = builder.Build();
 

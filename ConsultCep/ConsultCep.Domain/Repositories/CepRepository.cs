@@ -19,10 +19,12 @@ namespace ConsultCep.Domain.Repositories
     public class CepRepository : ICepRepository
     {
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IMessengerRepository _messengerRepository;
 
-        public CepRepository(IHttpClientFactory httpClientFactory)
+        public CepRepository(IHttpClientFactory httpClientFactory,IMessengerRepository messenger)
         {
             _httpClientFactory = httpClientFactory;
+            _messengerRepository = messenger;
         }
 
         public async Task<Response> BuscarInfoCep(string cep)
@@ -30,14 +32,15 @@ namespace ConsultCep.Domain.Repositories
             var requestValidacao = new CepDTORequest { CEP = cep };
             Response responseClass = new Response();
             CepValidador Validator = new CepValidador();
+
             var validResponse = Validator.Validate(requestValidacao);
             if (!validResponse.IsValid)
             {
                 validResponse.Errors.ForEach(X => responseClass.AdicionarMensagem("CepValidador", X.ErrorMessage));
                 return responseClass;
             }
+
             var http = _httpClientFactory.CreateClient("ViaCepApi");
-            Console.WriteLine(http.BaseAddress);
             var response = await http.GetAsync($"{cep}/json/");
             if (!response.IsSuccessStatusCode)
             {
@@ -62,35 +65,10 @@ namespace ConsultCep.Domain.Repositories
                  Port = 5672
             };
 
-            using (var connection = factory.CreateConnection())
-
-            using (var channel = connection.CreateModel())
-            {
-                var properties = channel.CreateBasicProperties();
-                var body = JsonConvert.SerializeObject(mapeado);
-                var byteTrade = Encoding.UTF8.GetBytes(body);
-
-               
-
-              
-                channel.ExchangeDeclare
-                    (
-                    "FanoutExchange",
-                    "fanout",
-                    durable: true
-                   );
-
-                channel.BasicPublish
-                    (
-                    "FanoutExchange",
-                    "",
-                    properties,
-                    byteTrade
-                    );
+           //await _messengerRepository.InviteMessage(mapeado, factory);
 
 
-                return responseClass;
-            }
+           return responseClass;
         }
     }
 }

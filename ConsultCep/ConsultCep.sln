@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsultCep.API", "ConsultCe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsultCep.Testes", "ConsultCep.Testes\ConsultCep.Testes.csproj", "{9A434268-8316-4E9F-A47D-2BE57EEDF889}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultCep.Utils", "ConsultCep.Utils\ConsultCep.Utils.csproj", "{6235D73D-A6C9-4F2B-BB34-E373E2BD5793}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsultCep.Utils", "ConsultCep.Utils\ConsultCep.Utils.csproj", "{6235D73D-A6C9-4F2B-BB34-E373E2BD5793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultCep.Services", "ConsultCep.Services\ConsultCep.Services.csproj", "{1097E277-2247-47A7-9C58-871FC72E0D0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6235D73D-A6C9-4F2B-BB34-E373E2BD5793}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6235D73D-A6C9-4F2B-BB34-E373E2BD5793}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6235D73D-A6C9-4F2B-BB34-E373E2BD5793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1097E277-2247-47A7-9C58-871FC72E0D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1097E277-2247-47A7-9C58-871FC72E0D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1097E277-2247-47A7-9C58-871FC72E0D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1097E277-2247-47A7-9C58-871FC72E0D0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,3 +1,4 @@
+using ConsultCep.Domain.Interfaces;
 using ConsultCep.Domain.Repositories;
 using NSubstitute;
 
@@ -7,10 +8,11 @@ namespace ConsultCep.Testes
     {
         private readonly IHttpClientFactory _httpClientFactory = Substitute.For<IHttpClientFactory>();
         private readonly CepRepository _sut;
+        private readonly IMessengerRepository messengerRepository = Substitute.For<IMessengerRepository>();
 
         public CepRepositorioTeste()
         {
-            _sut = new CepRepository(_httpClientFactory);
+            _sut = new CepRepository(_httpClientFactory, messengerRepository);
         }
 
         [Fact]

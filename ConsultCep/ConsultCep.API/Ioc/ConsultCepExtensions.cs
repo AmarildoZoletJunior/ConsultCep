@@ -2,6 +2,7 @@
 using ConsultCep.Domain.Interfaces;
 using ConsultCep.Domain.Repositories;
 using ConsultCep.Domain.Validador;
+using ConsultCep.Services.Cache;
 using FluentValidation;
 
 namespace ConsultCep.API.Ioc
@@ -15,6 +16,11 @@ namespace ConsultCep.API.Ioc
             services.AddTransient<IValidator<CepDTORequest>, CepValidador>();
 
             services.AddScoped<ICepRepository, CepRepository>();
+
+            services.AddScoped<IMessengerRepository, MessengerRepository>();
+            services.AddScoped<ICacheService, CacheService>();
+
+
 
             services.AddHttpClient("ViaCepApi", configurationClient =>
             {

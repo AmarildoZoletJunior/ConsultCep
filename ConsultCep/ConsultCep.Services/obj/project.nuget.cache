@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "BjgSmDddiQQB+D+/sKpTZHTo6S1oRqUzZAqcM2rq/ONQ0u4pQIwKXvrqurAV1Gwm5qaSP/d4bQxbYV9kmYWsLw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\CepProject\\ConsultCep\\ConsultCep.Services\\ConsultCep.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
